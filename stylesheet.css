@@ -1,7 +1,8 @@
 body {
   font-family: "Bellota", cursive;
   font-weight: normal;
-  color:rgb(51, 51, 51)
+  color:rgb(51, 51, 51);
+  background-color: #F3F6F4;
 }
 
 h1 {
@@ -23,10 +24,6 @@ p {
 
 .navbar-nav {
   font-weight: normal;
-}
-
-.navbar-custom {
-  background-color: rgb(44, 110, 73);
 }
 
 #carouselHero .carousel-item img {
@@ -57,293 +54,316 @@ p {
   color:rgb(255, 255, 255)
 }
 
-#mapArea {
-  background-color: rgb(255, 255, 255);
-  height: 50vh;
-}
-
-#welcome {
-  width: 80%;
-  margin: auto;
-  min-height: 100%;
+#region-list {
+  background-color: #163724;;
+  color: white;
+  padding: 1em;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-#welcome h1 {
-  font-size: 4em;
-  line-height: 0.8em;
-  color:rgb(51, 51, 51)
+#region-list > * {
+  padding-right: 1em;
+
 }
 
-#mapContainer {
-  width: 80%;
-  margin: auto;
-  min-height: 100%;
+#map-area {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  padding-top: 2em;
+  background: rgb(215,226,218);
+  background: linear-gradient(300deg, rgba(215,226,218,1) 0%, rgba(237,237,237,1) 68%);
+}
+
+#map-area > * {
+  flex: 1 1 0;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-#mapArea svg {
-  display: block;
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 768px) {
+  #map-area {
+    flex-direction: column;
+  }
 }
 
-#mapArea #greatManch {
+
+
+
+
+
+#map-area svg {
+  width: 100%;
+}
+
+#map-area #greatManch {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #greatManch:hover {
-  fill: #66c28e;
+#map-area #greatManch:hover {
+
+  cursor: default;
 }
 
-#mapArea #westYorks {
+#map-area #westYorks {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #westYorks:hover {
+#map-area #westYorks:hover {
   fill: #f3c981;
 }
 
-#mapArea #southYorks {
+#map-area #southYorks {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #southYorks:hover {
+#map-area #southYorks:hover {
   fill: #f3c981;
 }
 
-#mapArea #northYorks {
+#map-area #northYorks {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #northYorks:hover {
+#map-area #northYorks:hover {
   fill: #f3c981;
 }
 
-#mapArea #lancs {
+#map-area #lancs {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #lancs:hover {
-  fill: #66c28e;
+#map-area #lancs:hover {
+
+  cursor: default;
 }
 
-#mapArea #derbyshire {
+#map-area #derbyshire {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #derbyshire:hover {
-  fill: #66c28e;
+#map-area #derbyshire:hover {
+
+  cursor: default;
 }
 
-#mapArea #blackburn {
+#map-area #blackburn {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #blackburn:hover {
-  fill: #66c28e;
+#map-area #blackburn:hover {
+
+  cursor: default;
 }
 
-#mapArea #nottinghamshire {
+#map-area #nottinghamshire {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #nottinghamshire:hover {
-  fill: #66c28e;
+#map-area #nottinghamshire:hover {
+
+  cursor: default;
 }
 
-#mapArea #northEastLincs {
+#map-area #northEastLincs {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #northEastLincs:hover {
+#map-area #northEastLincs:hover {
   fill: #f3c981;
 }
 
-#mapArea #northLincs {
+#map-area #northLincs {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #northLincs:hover {
+#map-area #northLincs:hover {
   fill: #f3c981;
 }
 
-#mapArea #northLincsB {
+#map-area #northLincsB {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
   stroke-width: 0.1px;
-  transition: fill 0.3a;
+  transition: fill 0.3s;
 }
 
-#mapArea #northLincsB:hover {
+#map-area #northLincsB:hover {
   fill: #f3c981;
 }
 
-#mapArea #lincolnshire {
+#map-area #lincolnshire {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #lincolnshire:hover {
-  fill: #66c28e;
+#map-area #lincolnshire:hover {
+
+  cursor: default;
 }
 
-#mapArea #kingsUponHull {
+#map-area #kingsUponHull {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #kingsUponHull:hover {
+#map-area #kingsUponHull:hover {
   fill: #f3c981;
 }
 
-#mapArea #eastRiding {
+#map-area #eastRiding {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #eastRiding:hover {
+#map-area #eastRiding:hover {
   fill: #f3c981;
 }
 
-#mapArea #york {
+#map-area #york {
   fill: #eba62d;
   stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #york:hover {
+#map-area #york:hover {
   fill: #f3c981;
 }
 
-#mapArea #cheshire {
+#map-area #cheshire {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #cheshire:hover {
-  fill: #66c28e;
+#map-area #cheshire:hover {
+
+  cursor: default;
 }
 
-#mapArea #warrington {
+#map-area #warrington {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #warrington:hover {
-  fill: #66c28e;
+#map-area #warrington:hover {
+
+  cursor: default;
 }
 
-#mapArea #durham {
+#map-area #durham {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #durham:hover {
-  fill: #66c28e;
+#map-area #durham:hover {
+
+  cursor: default;
 }
 
-#mapArea #cumbria {
+#map-area #cumbria {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #cumbria:hover {
-  fill: #66c28e;
+#map-area #cumbria:hover {
+
+  cursor: default;
 }
 
-#mapArea #darlington {
+#map-area #darlington {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #darlington:hover {
-  fill: #66c28e;
+#map-area #darlington:hover {
+
+  cursor: default;
 }
 
-#mapArea #stockton {
+#map-area #stockton {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #stockton:hover {
-  fill: #66c28e;
+#map-area #stockton:hover {
+
+  cursor: default;
 }
 
-#mapArea #middlesborough {
+#map-area #middlesborough {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #middlesborough:hover {
-  fill: #66c28e;
+#map-area #middlesborough:hover {
+
+  cursor: default;
 }
 
-#mapArea #redcar {
+#map-area #redcar {
   fill: #2c6d48;
-  stroke: rgb(255, 255, 255);
-  stroke-width: 4px;
-  transition: fill 0.3a;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  transition: fill 0.3s;
 }
 
-#mapArea #redcar:hover {
-  fill: #66c28e;
+#map-area #redcar:hover {
+
+  cursor: default;
 }
