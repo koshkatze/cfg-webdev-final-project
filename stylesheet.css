@@ -1,19 +1,19 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  color:rgb(51, 51, 51);
-  background-color: #F3F6F4;
+  color: rgb(51, 51, 51);
+  background-color: rgba(255, 200, 184, 0.22872899159663862);
 }
 
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color:rgb(51, 51, 51)
+  color: rgb(51, 51, 51);
 }
 
 p {
   font-family: "Raleway", sans-serif;
-  color:rgb(51, 51, 51)
+  color: rgb(51, 51, 51);
 }
 
 .navbar {
@@ -51,11 +51,11 @@ p {
 
 .carousel-caption p {
   font-family: "Raleway", sans-serif;
-  color:rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 #region-list {
-  background-color: #163724;;
+  background-color: #163724;
   color: white;
   padding: 1em;
   display: flex;
@@ -83,8 +83,8 @@ p {
   flex-direction: row;
   padding-top: 2em;
   padding-bottom: 2em;
-  background: rgb(255,200,184);
-  background: rgba(255,200,184,0.22872899159663862);
+  background: rgb(255, 200, 184);
+  background: rgba(255, 200, 184, 0.22872899159663862);
 }
 
 #map-area > * {
@@ -115,9 +115,6 @@ p {
   margin-right: auto;
 }
 
-
-
-
 #map-area svg {
   width: 100%;
 }
@@ -130,7 +127,6 @@ p {
 }
 
 #map-area #greatManch:hover {
-
   cursor: default;
 }
 
@@ -175,7 +171,6 @@ p {
 }
 
 #map-area #lancs:hover {
-
   cursor: default;
 }
 
@@ -187,7 +182,6 @@ p {
 }
 
 #map-area #derbyshire:hover {
-
   cursor: default;
 }
 
@@ -199,7 +193,6 @@ p {
 }
 
 #map-area #blackburn:hover {
-
   cursor: default;
 }
 
@@ -211,7 +204,6 @@ p {
 }
 
 #map-area #nottinghamshire:hover {
-
   cursor: default;
 }
 
@@ -256,7 +248,6 @@ p {
 }
 
 #map-area #lincolnshire:hover {
-
   cursor: default;
 }
 
@@ -301,7 +292,6 @@ p {
 }
 
 #map-area #cheshire:hover {
-
   cursor: default;
 }
 
@@ -313,7 +303,6 @@ p {
 }
 
 #map-area #warrington:hover {
-
   cursor: default;
 }
 
@@ -325,7 +314,6 @@ p {
 }
 
 #map-area #durham:hover {
-
   cursor: default;
 }
 
@@ -337,7 +325,6 @@ p {
 }
 
 #map-area #cumbria:hover {
-
   cursor: default;
 }
 
@@ -349,7 +336,6 @@ p {
 }
 
 #map-area #darlington:hover {
-
   cursor: default;
 }
 
@@ -361,7 +347,6 @@ p {
 }
 
 #map-area #stockton:hover {
-
   cursor: default;
 }
 
@@ -373,7 +358,6 @@ p {
 }
 
 #map-area #middlesborough:hover {
-
   cursor: default;
 }
 
@@ -385,18 +369,17 @@ p {
 }
 
 #map-area #redcar:hover {
-
   cursor: default;
 }
 
 form {
-  border: 4px solid #FFC8B8;
-  background-color: #FFC8B8;
+  border: 4px solid #ffc8b8;
+  background-color: #ffc8b8;
 }
 
 .form-container {
   padding: 10px;
-  background-color: #FFC8B8;
+  background-color: #ffc8b8;
 }
 
 .form-container h2 {
@@ -406,7 +389,8 @@ form {
   font-size: 2.5em;
 }
 
-input[type=text], input[type=submit] {
+input[type="text"],
+input[type="submit"] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -416,7 +400,7 @@ input[type=text], input[type=submit] {
   box-sizing: border-box;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin-top: 16px;
 }
 
@@ -433,12 +417,32 @@ input[type=checkbox] {
   justify-content: space-evenly;
 }
 
+#overview-cards {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 #single-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
   width: 20vw;
   height: 100%;
+
+  transition: transform 500ms ease;
+}
+
+#single-card:hover {
+  transform: scale(1.05);
+}
+
+#single-card:hover h5,
+#single-card:hover p {
+  color: #841f00;
+  transition: color 150ms;
 }
 
 #single-card img {
@@ -454,15 +458,11 @@ input[type=checkbox] {
 #card-container {
   text-align: center;
   padding: 1em;
-  background-color: #FFC8B8;
+  background-color: #ffc8b8;
 }
 
 #card-container h5 {
   font-weight: 800;
-}
-
-#region-cards {
-  background: rgba(255,200,184,0.22872899159663862);
 }
 
 @media (max-width: 768px) {
@@ -477,5 +477,20 @@ input[type=checkbox] {
   }
   #single-card img {
     width: 80vw;
+  }
 }
+
+@media (max-width: 768px) {
+  #overview-cards {
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 160vh;
+    align-items: center;
+  }
+  #single-card {
+    width: 80vw;
+  }
+  #single-card img {
+    width: 80vw;
+  }
 }
