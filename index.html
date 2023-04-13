@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -59,6 +60,7 @@
       </div>
     </nav>
 
+    <!-- Carousel hero images -->
     <div id="carouselHero" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -137,6 +139,7 @@
       </button>
     </div>
 
+    <!-- Region menu -->
     <div id="region-list">
       <div>North Yorkshire</div>
       <div>East Yorkshire</div>
@@ -144,9 +147,10 @@
       <div>West Yorkshire</div>
     </div>
 
+    <!-- Map and welcome area-->
     <div id="map-area">
       <div id="welcome">
-        <img src="images/yorkshirerose.png" alt="Yorkshire rose">
+        <img src="images/yorkshirerose.png" alt="Yorkshire rose" />
         <h1>Welcome to Yorkshire</h1>
         <p>
           Use this map to select a region. We have collated the best of the best
@@ -158,8 +162,9 @@
         </p>
       </div>
 
+      <!-- Container for the map svg -->
       <div id="mapContainer">
-            <!-- Used this amazing video for the map https://www.youtube.com/watch?v=6C-GYwxdZd4&ab_channel=TSNsoft-->
+        <!-- Used this amazing video for the map https://www.youtube.com/watch?v=6C-GYwxdZd4&ab_channel=TSNsoft -->
         <svg
           version="1.1"
           id="Layer_1"
@@ -733,6 +738,26 @@
         </svg>
       </div>
     </div>
+
+    <!-- Newsletter signup area -->
+    <form action="action_page.php">
+      <div class="form-container container">
+        <h2>Subscribe to our newsletter</h2>
+        <p>
+          Lorem ipsum text about why you should subscribe to our newsletter
+          blabla. Lorem ipsum text about why you should subscribe to our
+          newsletter blabla. Lorem ipsum text about why you should subscribe to
+          our newsletter blabla.
+        </p>
+      </div>
+      <div class="form-container container">
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Email address" name="mail" required />
+        <div class="form-container container">
+          <input type="button" class="btn btn-success" value="Subscribe"/>
+        </div>
+      </div>
+    </form>
 
     <script src="javascript.js"></script>
     <script

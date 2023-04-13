@@ -72,8 +72,9 @@ p {
   display: flex;
   flex-direction: row;
   padding-top: 2em;
-  background: rgb(215,226,218);
-  background: linear-gradient(300deg, rgba(215,226,218,1) 0%, rgba(237,237,237,1) 68%);
+  padding-bottom: 2em;
+  background: rgb(255,200,184);
+  background: rgba(255,200,184,0.22872899159663862);
 }
 
 #map-area > * {
@@ -373,4 +374,41 @@ p {
 #map-area #redcar:hover {
 
   cursor: default;
+}
+
+form {
+  border: 4px solid #FFC8B8;
+  background-color: #FFC8B8;
+}
+
+.container {
+  padding: 10px;
+  background-color: #FFC8B8;
+}
+
+.container h2 {
+  padding-top: 20px;
+  font-family: "Bellota Text", cursive;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
