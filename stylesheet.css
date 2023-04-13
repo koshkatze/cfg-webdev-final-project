@@ -92,7 +92,14 @@ p {
   }
 }
 
+#map-area h1 {
+  font-size: 4em;
+}
 
+#map-area img {
+  max-width: 30%;
+  margin: auto;
+}
 
 
 
