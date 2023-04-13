@@ -18,7 +18,7 @@ p {
 
 .navbar {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   background-color: #242735;
 }
 
@@ -61,6 +61,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 #region-list > * {
@@ -94,12 +95,15 @@ p {
 }
 
 #map-area h1 {
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: 900;
 }
 
 #map-area img {
-  max-width: 20%;
-  margin: auto;
+  max-width: 30%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
