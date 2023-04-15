@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South Yorkshire</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Travel Yorkshire</title>
@@ -58,7 +62,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Regions</a>
+              <a class="nav-link active" href="../regions/">Regions</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Map View</a>
@@ -95,40 +99,39 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="images/benjamin-elliott-O5_RiTqiHGs-unsplash.jpg"
+            src="../North-yorkshire/images/middlesbrough.jpg"
             class="d-block w-100"
             alt="..."
           />
           <div class="carousel-caption">
-            <h5>Sheffield</h5>
+            <h5>Middlesbrough</h5>
             <p>
-              The beating heart of music, theatre and culture in South
-              Yorkshire.
+              Get your fill of the great outdoors, stunning parks and family days out.
             </p>
           </div>
         </div>
         <div class="carousel-item">
           <img
-            src="images/david-jones-_tsbEWu0SI4-unsplash.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption">
-            <h5>Leeds</h5>
-            <p>
-              Yorkshire's largest city, and the jewel in West Yorkshire's crown.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/karl-moran-JBJmXBiCBPk-unsplash.jpg"
+            src="../North-yorkshire/images/york-492566_1280.webp"
             class="d-block w-100"
             alt="..."
           />
           <div class="carousel-caption">
             <h5>York</h5>
-            <p>The great walled city, bringing ancient and modern together.</p>
+            <p>
+              Enter history with gothic minsters, quaint market squares and beautiful Georgian townhouses.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../North-yorkshire/images/dc7b03b7-7fc3-4a33-a0b3-7fecc620723c copy.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption">
+            <h5>Scarborough</h5>
+            <p> Discover award winning beaches, unique character and stunning scenery.</p>
           </div>
         </div>
       </div>
@@ -153,103 +156,101 @@
     </div>
 
     <!-- Region menu -->
-    <div class="region-list">
-      <div><p>North Yorkshire</p></div>
-      <div><p>East Yorkshire</p></div>
-      <div><p>South Yorkshire</p></div>
-      <div><p>West Yorkshire</p></div>
-    </div>
+    <style>
+      /*Code to change color of active link*/
+      .navbar-nav > .active > a {
+          color: #eca72c;
+      }
+  </style>
+</head>
 
-    <!-- Region cards -->
-    <div class="region-cards">
-      <div class="single-card">
-        <img
-          src="images/dave-lowe-Vny0hK6TnWs-unsplash.jpg"
-          alt="Image of Whitby"
-        />
-        <div class="card-container">
-          <h5>North Yorkshire</h5>
-          <p>Explore the blah blah blah.</p>
-        </div>
-      </div>
+<body>
+  <ul class="navbar-nav" id="regionnav">
+      <li class="nav-item active" id="navreg">
+          <a class="nav-link" href="#">
+              North Yorkshire
+          </a>
+      </li>
+      <li class="nav-item" id="navreg">
+          <a class="nav-link" href="#">
+              East Yorkshire
+          </a>
+      </li>
+      <li class="nav-item" id="navreg">
+          <a class="nav-link" href="#">
+              South Yorkshire
+          </a>
+      </li>
+      <li class="nav-item" id="navreg">
+          <a class="nav-link"
+             href="#">West Yorkshire</a>
+      </li>
+  </ul>
 
-      <div class="single-card">
-        <img
-          src="images/43-clicks-north-_4NX3lrfbmo-unsplash.jpg"
-          alt="Image of Hull"
-        />
-        <div class="card-container">
-          <h5>East Yorkshire</h5>
-          <p>Explore the blah blah blah.</p>
-        </div>
-      </div>
+<script>
+    $(document).ready(function () {
+        $("ul.navbar-nav > li").click(function (e) {
+         $("ul.navbar-nav > li").removeClass("active");
+         $(this).addClass("active");
+          });
+      });
+  </script>
 
-      <a href="../south-yorkshire/">
-        <div class="single-card">
-          <img
-            src="images/peter-wilkinson-gRL1W-3rv8c-unsplash.jpg"
-            alt="Image of Sheffield"
-          />
-          <div class="card-container">
-            <h5>South Yorkshire</h5>
-            <p>Explore the blah blah blah.</p>
-          </div>
-        </div>
-      </a>
-
-      <div class="single-card">
-        <img
-          src="images/jonny-gios-SH0FbXBAGpg-unsplash.jpg"
-          alt="Image of Leeds"
-        />
-        <div class="card-container">
-          <h5>West Yorkshire</h5>
-          <p>Explore the blah blah blah.</p>
-        </div>
+    <!-- Picks cards -->
+    <div class="container">
+    <div class="row">
+<div class="col-md-6">
+    <div class="picks h-100">
+    <div class="card mb-3">
+      <img class="picks-img-top" src="./images/Best things to do/6a.jpg" alt="Card image cap">
+      <div class="text-center">
+        <h5 class="picks-title"><strong>Ouse River Sightseeing Cruise in York</strong></h5>
+        <p class="picks-text">Discover York without having to worry about studying a map with this relaxing Ouse River sightseeing cruise. It’s a great way to see the city from a new perspective, and to learn about local history too. Highlights include seeing top city landmarks such as the York Museum and Gardens, and Clifford’s Tower.</p>
+        <p class="picks-text"><small class="text-muted"><strong>£ £ £ </strong>£ £</small></p>
       </div>
     </div>
-
-    <div class="footer-container">
-      <div class="footer">
-        <div class="footer-heading">
-          <h2>About Us</h2>
-          <a href="#">Contact Us</a>
-          <a href="#">Support</a>
-        </div>
-        <div class="footer-heading">
-          <h2>Socials</h2>
-          <a href="#"
-            ><i class="fa-brands fa-square-facebook fa-lg"></i> Facebook</a
-          >
-          <a href="#"
-            ><i class="fa-brands fa-square-instagram fa-lg"></i> Instagram</a
-          >
-          <a href="#"
-            ><i class="fa-brands fa-square-twitter fa-lg"></i> Twitter</a
-          >
-          <a href="#"
-            ><i class="fa-brands fa-square-youtube fa-lg"></i> YouTube</a
-          >
-        </div>
-        <div class="footer-email-form">
-          <h2>Join our Newsletter</h2>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            id="footer-email"
-          />
-          <button id="footer-email-btn">Sign Up</button>
-        </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="picks h-100">
+    <div class="card mb-3">
+      <img class="picks-img-top" src="./images/Best things to do/8e.jpg" alt="Card image cap">
+      <div class="text-center">
+        <h5 class="picks-title"><strong>The Deathly Dark Ghost Tour of York: <i>Visit York Award Winner 2022</i>
+        </strong></h5>
+        <p class="picks-text">From plague to Vikings to butchery and murder, discover York’s sinister underbelly on this family-friendly tour led by a guide known for his dark sense of humour. See sights such as York Minster, the Shambles and Whip-Ma-Whop-Ma Gate, the silliest street in England, as you hear tales of bygone days, vile crimes and things that go bump in the night.</p>
+        <p class="picks-text"><small class="text-muted"><strong>£ £ £ </strong>£ £</small></p>
       </div>
     </div>
+  </div>
+</div>
+</div>
+</div>
 
-    <script src="../javascript.js"></script>
+ <!-- Newsletter signup area -->
+ <form action="action_page.php">
+  <div class="form-container container">
+    <h2>Subscribe to our newsletter</h2>
+    <p>
+      Bringing you the hottest picks from around Yorkshire, we'll send you the download on what to do with your time in the Humber from puffin spotting to ancient cathedrals.
+    </p>
+  </div>
+  <div class="form-container container">
+    <input type="text" placeholder="Name" name="name" required />
+    <input type="text" placeholder="Email address" name="mail" required />
+    <div class="form-container container">
+      <input type="button" class="btn btn-success" value="Subscribe" />
+    </div>
+  </div>
+</form>
 
-    <script
-      src="https://kit.fontawesome.com/b2a0ed1529.js"
-      crossorigin="anonymous"
-    ></script>
-
+<script src="javascript.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"
+></script>
+    <script src="javascript.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
