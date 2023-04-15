@@ -1,0 +1,650 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    /* background-color: rgba(255, 200, 184, 0.22872899159663862); */
+  }
+  
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+  }
+  
+  p {
+    font-family: "Raleway", sans-serif;
+    color: rgb(51, 51, 51);
+  }
+  
+  .navbar {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    background-color: #29392e;
+  }
+  
+  .navbar-nav {
+    font-weight: normal;
+  }
+  
+  #carouselHero .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    overflow: hidden;
+  }
+  
+  #carouselHero .carousel-item:before {
+    content: "";
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .carousel-caption h5 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+  }
+  
+  .carousel-caption p {
+    font-family: "Raleway", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  .region-list {
+    background-color: #163724;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  .region-list > * {
+    padding-right: 1em;
+  }
+  
+  .region-list p {
+    font-weight: 700;
+    color: white;
+    margin: 0px 0px 0px;
+  }
+  
+  .region-list > * :hover {
+    font-size: 1rem;
+  }
+  
+  #welcome p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #welcome h1 {
+    padding-top: 10px;
+  }
+  
+  #welcome-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  #map-area {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: rgb(255, 200, 184);
+    background: rgba(255, 200, 184, 0.22872899159663862);
+  }
+  
+  #map-area > * {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    #map-area {
+      flex-direction: column;
+    }
+    #welcome {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+  }
+  
+  #map-area h1 {
+    font-size: 3em;
+    font-weight: 900;
+  }
+  
+  @media (max-width: 768px) {
+    #map-area h1 {
+      font-size: 2.2em;
+      padding-left: 0.3em;
+    }
+  }
+  
+  #map-area img {
+    max-width: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #map-area svg {
+    width: 100%;
+  }
+  
+  #map-area #greatManch {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #greatManch:hover {
+    cursor: default;
+  }
+  
+  #map-area #westYorks {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #westYorks:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #southYorks {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #southYorks:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #northYorks {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #northYorks:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #lancs {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #lancs:hover {
+    cursor: default;
+  }
+  
+  #map-area #derbyshire {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #derbyshire:hover {
+    cursor: default;
+  }
+  
+  #map-area #blackburn {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #blackburn:hover {
+    cursor: default;
+  }
+  
+  #map-area #nottinghamshire {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #nottinghamshire:hover {
+    cursor: default;
+  }
+  
+  #map-area #northEastLincs {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #northEastLincs:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #northLincs {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #northLincs:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #northLincsB {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0.1px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #northLincsB:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #lincolnshire {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #lincolnshire:hover {
+    cursor: default;
+  }
+  
+  #map-area #kingsUponHull {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #kingsUponHull:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #eastRiding {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #eastRiding:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #york {
+    fill: #eba62d;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #york:hover {
+    fill: #f3c981;
+  }
+  
+  #map-area #cheshire {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #cheshire:hover {
+    cursor: default;
+  }
+  
+  #map-area #warrington {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #warrington:hover {
+    cursor: default;
+  }
+  
+  #map-area #durham {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #durham:hover {
+    cursor: default;
+  }
+  
+  #map-area #cumbria {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #cumbria:hover {
+    cursor: default;
+  }
+  
+  #map-area #darlington {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #darlington:hover {
+    cursor: default;
+  }
+  
+  #map-area #stockton {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #stockton:hover {
+    cursor: default;
+  }
+  
+  #map-area #middlesborough {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #middlesborough:hover {
+    cursor: default;
+  }
+  
+  #map-area #redcar {
+    fill: #2c6d48;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+  }
+  
+  #map-area #redcar:hover {
+    cursor: default;
+  }
+  
+  form {
+    border: 4px solid #ffc8b8;
+    background-color: #ffc8b8;
+  }
+  
+  .newsletter-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .subscribe-container {
+    padding: 10px 40px;
+    background-color: #ffc8b8;
+    width: 66%;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-area {
+      flex-direction: column;
+    }
+    .subscribe-container {
+      width: 100%;
+    }
+  }
+  
+  .subscribe-container p {
+    line-height: 1.8em;
+  }
+  
+  .subscribe-container h2 {
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+    width: 30vw;
+    height: 40px;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    input[type="text"],
+  input[type="submit"] {
+    width: 80vw;
+  }
+  }
+  
+  input[type="button"] {
+    width: 30vw;
+    margin-top: 8px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .region-cards {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .overview-cards {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .single-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 20vw;
+  
+    transition: transform 500ms ease;
+  }
+  
+  .single-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .single-card:hover h5,
+  .single-card:hover p {
+    color: #841f00;
+    transition: color 150ms;
+  }
+  
+  .single-card img {
+    width: 20vw;
+    max-height: 20vh;
+    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-container {
+    text-align: center;
+    padding: 1em;
+    background-color: #ffc8b8;
+  }
+  
+  .card-container h5 {
+    font-weight: 800;
+  }
+  
+  @media (max-width: 768px) {
+    .region-cards {
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-height: 200vh;
+      align-items: center;
+    }
+    .single-card {
+      width: 80vw;
+    }
+    .single-card img {
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overview-cards {
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-height: 160vh;
+      align-items: center;
+    }
+    .single-card {
+      width: 80vw;
+    }
+    .single-card img {
+      width: 80vw;
+    }
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .footer-container {
+    background-color: #242735;
+    width: 100vw;
+  }
+  
+  .footer {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #29392e;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 4rem 0 2rem 10rem;
+  }
+  
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+  }
+  
+  .footer-heading h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: 40px;
+  }
+  
+  .footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-heading a:hover {
+    color: #68b188;
+    transition: 0.3s ease-out;
+  }
+  
+  .footer-email-form {
+    margin-left: auto;
+    padding-right: 10rem;
+  }
+  
+  .footer-email-form h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  #footer-email {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footer-email::placeholder {
+    color: #b1b1b1;
+  }
+  
+  #footer-email-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #68b188;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  #footer-email-btn:hover {
+    cursor: pointer;
+    background-color: #458561;
+    transition: all 0.4s ease-out;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      padding-left: 4rem;
+    }
+    .footer-heading {
+      margin-bottom: 2rem;
+    }
+  }
