@@ -83,6 +83,28 @@ p {
   font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  #carouselHeroHome .carousel-caption {
+    padding: 0px;
+  }
+
+  #carouselHeroHome .carousel-caption h5 {
+    font-size: 3em;
+  }
+  
+  #carouselHeroHome .carousel-caption p {
+    font-size: revert;
+  }
+
+  #carouselHeroHome .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 85vh;
+    overflow: hidden;
+  }
+
+}
+
 .region-list {
   background-color: #163724;
   color: white;
