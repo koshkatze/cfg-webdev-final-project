@@ -239,7 +239,8 @@ p {
 }
 
 #map-area #northEastLincs:hover {
-  fill: #f3c981;
+  fill: #eba62d;
+  cursor: default;
 }
 
 #map-area #northLincs {
@@ -250,7 +251,8 @@ p {
 }
 
 #map-area #northLincs:hover {
-  fill: #f3c981;
+  fill: #eba62d;
+  cursor: default;
 }
 
 #map-area #northLincsB {
@@ -261,7 +263,8 @@ p {
 }
 
 #map-area #northLincsB:hover {
-  fill: #f3c981;
+  fill: #eba62d;
+  cursor: default;
 }
 
 #map-area #lincolnshire {
@@ -283,7 +286,8 @@ p {
 }
 
 #map-area #kingsUponHull:hover {
-  fill: #f3c981;
+  fill: #eba62d;
+  cursor: default;
 }
 
 #map-area #eastRiding {
@@ -305,7 +309,8 @@ p {
 }
 
 #map-area #york:hover {
-  fill: #f3c981;
+  fill: #eba62d;
+  cursor: default;
 }
 
 #map-area #cheshire {
