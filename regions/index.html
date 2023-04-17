@@ -69,7 +69,7 @@
     </nav>
 
     <!-- Carousel hero images -->
-    <div id="carouselHero" class="carousel slide">
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -93,7 +93,7 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="5000">
           <img
             src="images/benjamin-elliott-O5_RiTqiHGs-unsplash.jpg"
             class="d-block w-100"
@@ -107,7 +107,7 @@
             </p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <img
             src="images/david-jones-_tsbEWu0SI4-unsplash.jpg"
             class="d-block w-100"
@@ -120,7 +120,7 @@
             </p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <img
             src="images/karl-moran-JBJmXBiCBPk-unsplash.jpg"
             class="d-block w-100"
@@ -154,10 +154,18 @@
 
     <!-- Region menu -->
     <div class="region-list">
-      <div><p>North Yorkshire</p></div>
-      <div><p>East Yorkshire</p></div>
-      <div><p>South Yorkshire</p></div>
-      <div><p>West Yorkshire</p></div>
+      <div>
+        <p><a href="../north-yorkshire">North Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="../east-yorkshire">East Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="../south-yorkshire">South Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="../west-yorkshire">West Yorkshire</a></p>
+      </div>
     </div>
 
     <!-- Region cards -->
@@ -170,7 +178,7 @@
           />
           <div class="card-container">
             <h5>North Yorkshire</h5>
-            <p>Explore the blah blah blah.</p>
+            <p>Home of the Yorkshire Dales.</p>
           </div>
         </div>
       </a>
@@ -183,7 +191,7 @@
           />
           <div class="card-container">
             <h5>East Yorkshire</h5>
-            <p>Explore the blah blah blah.</p>
+            <p>Full of rural and seaside character.</p>
           </div>
         </div>
       </a>
@@ -196,7 +204,7 @@
           />
           <div class="card-container">
             <h5>South Yorkshire</h5>
-            <p>Explore the blah blah blah.</p>
+            <p>The beauting heart of industry.</p>
           </div>
         </div>
       </a>
@@ -209,7 +217,7 @@
           />
           <div class="card-container">
             <h5>West Yorkshire</h5>
-            <p>Explore the blah blah blah.</p>
+            <p>Explore the historic castles.</p>
           </div>
         </div>
       </a>
@@ -248,6 +256,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="to-top-button" title="Go to top">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
 
     <script src="../javascript.js"></script>
 

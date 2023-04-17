@@ -29,11 +29,28 @@ p {
 #carouselHero .carousel-item img {
   object-fit: cover;
   object-position: center;
-  height: 60vh;
+  height: 50vh;
   overflow: hidden;
 }
 
 #carouselHero .carousel-item:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#carouselHeroHome .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 87.25vh;
+  overflow: hidden;
+}
+
+#carouselHeroHome .carousel-item:before {
   content: "";
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
   display: block;
@@ -52,6 +69,18 @@ p {
 .carousel-caption p {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
+}
+
+#carouselHeroHome .carousel-caption {
+  padding: 17rem;
+}
+
+#carouselHeroHome .carousel-caption h5 {
+  font-size: 6rem;
+}
+
+#carouselHeroHome .carousel-caption p {
+  font-size: 1.5rem;
 }
 
 .region-list {
@@ -74,8 +103,15 @@ p {
   margin: 0px 0px 0px;
 }
 
-.region-list > * :hover {
-  font-size: 1rem;
+.region-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.region-list a:hover {
+  text-decoration: none;
+  color: #68b188;
+  transition: 0.3s ease-out;
 }
 
 #welcome p {
@@ -687,7 +723,7 @@ input[type="button"] {
 }
 
 .category-overview-3 {
-  background-color: #68B188;
+  background-color: #68b188;
   padding: 20px;
   min-height: 100vh;
 }
@@ -771,6 +807,25 @@ input[type="button"] {
   overflow: scroll;
 }
 
+.category-paragraph a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #163724;
+}
+
+.category-paragraph a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #336045;
+  transition: 0.3s ease-in;
+}
+
+.category-paragraph a:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: #407b58;
+}
+
 .category-colour-paragraph-1 {
   background-color: #f9e4c0;
 }
@@ -780,7 +835,7 @@ input[type="button"] {
 }
 
 .category-colour-paragraph-3 {
-  background-color: #C6E2D2;
+  background-color: #c6e2d2;
 }
 
 @media (max-width: 768px) {
@@ -805,7 +860,7 @@ input[type="button"] {
 }
 
 .category-colour-header-3 {
-  background-color: #A1CEB5;
+  background-color: #a1ceb5;
 }
 
 .category-header h3 {
@@ -931,8 +986,6 @@ input[type="button"] {
   background-color: #e79a15;
 }
 
-
-
 #to-top-button {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -941,11 +994,11 @@ input[type="button"] {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: #2c6d48; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 

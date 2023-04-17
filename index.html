@@ -26,7 +26,6 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
@@ -70,11 +69,11 @@
     </nav>
 
     <!-- Carousel hero images -->
-    <div id="carouselHero" class="carousel slide">
+    <div id="carouselHeroHome" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselHero"
+          data-bs-target="#carouselHeroHome"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -82,30 +81,30 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselHero"
+          data-bs-target="#carouselHeroHome"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselHero"
+          data-bs-target="#carouselHeroHome"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="5000">
           <img
-            src="images/tom-wheatley-G_dFXsn5How-unsplash.jpg"
+            src="images/matt-noble-IEyCQM5sePY-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
           <div class="carousel-caption">
-            <h5>Pen-y-ghent</h5>
-            <p>Well-known for being one of the iconic Yorkshire 3 Peaks.</p>
+            <h5>Pickering</h5>
+            <p>The gateway to the North York Moors.</p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <img
             src="images/gary-butterfield-UDoUnkOVbig-unsplash.jpg"
             class="d-block w-100"
@@ -113,10 +112,10 @@
           />
           <div class="carousel-caption">
             <h5>Bradford</h5>
-            <p>Where the fresh air and natural beauty will invigorate you.</p>
+            <p>Invigorating fresh air and natural beauty.</p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <img
             src="images/phil-hearing-s-Me5_FKp68-unsplash.jpg"
             class="d-block w-100"
@@ -131,7 +130,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselHero"
+        data-bs-target="#carouselHeroHome"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -140,7 +139,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselHero"
+        data-bs-target="#carouselHeroHome"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -150,10 +149,18 @@
 
     <!-- Region menu -->
     <div class="region-list">
-      <div><p>North Yorkshire</p></div>
-      <div><p>East Yorkshire</p></div>
-      <div><p>South Yorkshire</p></div>
-      <div><p>West Yorkshire</p></div>
+      <div>
+        <p><a href="north-yorkshire">North Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="east-yorkshire">East Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="south-yorkshire">South Yorkshire</a></p>
+      </div>
+      <div>
+        <p><a href="west-yorkshire">West Yorkshire</a></p>
+      </div>
     </div>
 
     <!-- Map and welcome area-->
@@ -238,7 +245,10 @@
               />
             </a>
 
-            <a xlink:title="West Yorkshire" xlink:href="west-yorkshire/index.html">
+            <a
+              xlink:title="West Yorkshire"
+              xlink:href="west-yorkshire/index.html"
+            >
               <path
                 id="westYorks"
                 class="st1"
@@ -275,7 +285,10 @@
               />
             </a>
 
-            <a xlink:title="South Yorkshire" xlink:href="south-yorkshire/index.html">
+            <a
+              xlink:title="South Yorkshire"
+              xlink:href="south-yorkshire/index.html"
+            >
               <path
                 id="southYorks"
                 class="st1"
@@ -308,7 +321,10 @@
               />
             </a>
 
-            <a xlink:title="North Yorkshire" xlink:href="north-yorkshire/index.html">
+            <a
+              xlink:title="North Yorkshire"
+              xlink:href="north-yorkshire/index.html"
+            >
               <path
                 id="northYorks"
                 class="st1"
@@ -567,7 +583,10 @@
               />
             </a>
 
-            <a xlink:title="East Riding of Yorkshire" xlink:href="east-yorkshire/index.html">
+            <a
+              xlink:title="East Riding of Yorkshire"
+              xlink:href="east-yorkshire/index.html"
+            >
               <path
                 id="eastRiding"
                 class="st1"
@@ -778,10 +797,18 @@
         </div>
         <div class="footer-heading">
           <h2>Socials</h2>
-          <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i> Facebook</a>
-          <a href="#"><i class="fa-brands fa-square-instagram fa-lg"></i> Instagram</a>
-          <a href="#"><i class="fa-brands fa-square-twitter fa-lg"></i> Twitter</a>
-          <a href="#"><i class="fa-brands fa-square-youtube fa-lg"></i> YouTube</a>
+          <a href="#"
+            ><i class="fa-brands fa-square-facebook fa-lg"></i> Facebook</a
+          >
+          <a href="#"
+            ><i class="fa-brands fa-square-instagram fa-lg"></i> Instagram</a
+          >
+          <a href="#"
+            ><i class="fa-brands fa-square-twitter fa-lg"></i> Twitter</a
+          >
+          <a href="#"
+            ><i class="fa-brands fa-square-youtube fa-lg"></i> YouTube</a
+          >
         </div>
         <div class="footer-email-form">
           <h2>Join our Newsletter</h2>
@@ -794,6 +821,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="to-top-button" title="Go to top">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
 
     <script src="javascript.js"></script>
 
